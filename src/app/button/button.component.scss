@@ -4,4 +4,7 @@
 
 .app-text {
   color: var(--sd-test-tokens-black);
+  &--blue {
+    color: var(--sd-test-tokens-blue);
+  }
 }
