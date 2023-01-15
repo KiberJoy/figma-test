@@ -1,10 +1,12 @@
+@import "build/scss/_variables.scss";
+
 .app-button {
-  background-color: var(--sd-test-tokens-red);
+  background-color: $sd-test-tokens-red;
 }
 
 .app-text {
-  color: var(--sd-test-tokens-black);
+  color: $sd-test-tokens-black;
   &--blue {
-    color: var(--sd-test-tokens-blue);
+    color: $sd-test-tokens-blue;
   }
 }
