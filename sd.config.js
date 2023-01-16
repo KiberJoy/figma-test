@@ -1,6 +1,5 @@
 module.exports = {
   format: {
-    // Adding a custom format to show how to get an alias's name.
     customFormat: function ({ dictionary, options }) {
       const hex2rgba = (value, alpha = 0.5) => {
         const [r, g, b] = value.match(/\w\w/g).map((x) => parseInt(x, 16));
@@ -9,7 +8,6 @@ module.exports = {
       return dictionary.allTokens
         .map((token) => {
           let value = JSON.stringify(token.value);
-          // new option added to decide whether or not to output references
 
           return `export const ${token.name} = ${hex2rgba(value, 0.5)};`;
         })
