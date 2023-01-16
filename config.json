@@ -11,6 +11,26 @@
           "format": "scss/variables"
         }
       ]
+    },
+    "js": {
+      "transformGroup": "js",
+      "buildPath": "build/js/",
+      "files": [
+        {
+          "destination": "_variables.js",
+          "format": "javascript/es6",
+          "options": {
+            "outputReferences": true
+          }
+        },
+        {
+          "destination": "_variables.d.ts",
+          "format": "typescript/es6-declarations",
+          "options": {
+            "outputReferences": true
+          }
+        }
+      ]
     }
   }
 }
